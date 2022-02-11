@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mnist-deployment
+  labels:
+    app: mnist
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mnist
+  template:
+    metadata:
+      labels:
+        app: mnist
+    spec:
+      containers:
+      - name: mnist
+        image: mnist:test
+        ports:
+        - containerPort: 80

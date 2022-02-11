@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<mapping>
+	<map>
+		<framework name="input.1" output_port_id="input.1" />
+		<IR name="input.1" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="conv1.weight" output_port_id="conv1.weight" />
+		<IR name="conv1.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Conv_0" output_port_id="9" />
+		<IR name="Conv_0" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_1" output_port_id="10" />
+		<IR name="Relu_1" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="conv2.weight" output_port_id="conv2.weight" />
+		<IR name="conv2.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Conv_2" output_port_id="11" />
+		<IR name="Conv_2" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_3" output_port_id="12" />
+		<IR name="Relu_3" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="MaxPool_4" output_port_id="13" />
+		<IR name="MaxPool_4" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="Flatten_5/Reshape" output_port_id="14" />
+		<IR name="Flatten_5/Reshape" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="fc1.weight" output_port_id="fc1.weight" />
+		<IR name="fc1.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="fc1.bias" output_port_id="fc1.bias" />
+		<IR name="fc1.bias" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Gemm_6" output_port_id="15" />
+		<IR name="Gemm_6" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="Relu_7" output_port_id="16" />
+		<IR name="Relu_7" output_port_id="1" />
+	</map>
+	<map>
+		<framework name="fc2.weight" output_port_id="fc2.weight" />
+		<IR name="fc2.weight" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="fc2.bias" output_port_id="fc2.bias" />
+		<IR name="fc2.bias" output_port_id="0" />
+	</map>
+	<map>
+		<framework name="Gemm_8" output_port_id="17" />
+		<IR name="Gemm_8" output_port_id="2" />
+	</map>
+	<map>
+		<framework name="18" output_port_id="18" />
+		<IR name="18" output_port_id="2" />
+	</map>
+</mapping>
